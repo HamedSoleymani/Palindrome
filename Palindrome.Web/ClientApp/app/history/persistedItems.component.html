@@ -1,0 +1,13 @@
+﻿<table>
+    <thead>
+        <tr>
+            <th>Entry</th>
+            <th>Created Date</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let p of persistedItems">
+        <th>{{ p.entry }}</th>
+        <th>{{ p.createdDate | date }}</th>
+    </tr>
+
+</table>

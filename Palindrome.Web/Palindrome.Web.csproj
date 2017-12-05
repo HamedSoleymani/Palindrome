@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\app\history\persistedItems.component.ts" />
+    <None Remove="ClientApp\app\history\persistedItems.ts" />
+    <None Remove="ClientApp\app\home\home.component.ts" />
+    <None Remove="ClientApp\app\shared\dataService.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Palindrome.DataAccess\Palindrome.DataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\history\history.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\history\persistedItems.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\home\checkPalindrome.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\home\home.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\model\persistedEntry.ts" />
+    <TypeScriptCompile Include="ClientApp\app\shared\dataService.ts" />
+  </ItemGroup>
+
+</Project>

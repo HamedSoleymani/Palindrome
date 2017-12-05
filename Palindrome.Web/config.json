@@ -1,0 +1,5 @@
+﻿{
+  "ConnectionStrings": {
+    "PalindromeConnectionStrings": "server=(localdb)\\ProjectsV13;Database=PalindromeDb;Integrated Security=true;MultipleActiveResultSets=true;"
+  }
+}
